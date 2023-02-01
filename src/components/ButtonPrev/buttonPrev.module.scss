@@ -1,0 +1,10 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:hover {
+    transform: translateX(-5px);
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../assets/styles/variables.scss";
+
+.wishlist {
+  &__header {
+    background: url("../../assets/images/wishlist_header_bg.svg") no-repeat
+      center -230px / 400px 400px;
+    padding: 50px 15px 15px 15px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #35353a;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: bold;
+    color: #35353a;
+    margin-bottom: 25px;
+  }
+
+  &__search {
+    position: relative;
+    height: 48px;
+    background: #f2f2f2;
+    border-radius: 24px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    color: #35353a;
+    padding: 0 15px 0 50px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: #35353a;
+      opacity: 0.4;
+    }
+  }
+
+  &__searchBox {
+    position: relative;
+  }
+
+  &__searchIcon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: calc(50% - 15px);
+  }
+
+  &__list {
+    display: block;
+
+    @media all and (min-width: $screen-smart) {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin: 0 7.5px;
+    }
+  }
+
+  &__empty {
+    font-size: 16px;
+    color: #35353a;
+    margin: 30px 7.5px 0 7.5px;
+  }
+}

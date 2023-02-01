@@ -1,0 +1,129 @@
+@import "../../assets/styles/variables.scss";
+
+.card {
+  display: block;
+  position: relative;
+  box-shadow: 0px 3px 16px #51515129;
+  border-radius: 20px;
+  padding: 20px;
+  background: #f5f3f6;
+  overflow: hidden;
+  margin: 10px 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: calc(100% - 30px);
+
+  @media all and (min-width: $screen-smart) {
+    margin: 10px 7.5px;
+    width: calc(50% - 15px);
+  }
+
+  @media all and (min-width: $screen-tablet) {
+    width: calc(100% / 3 - 15px);
+  }
+
+  @media all and (min-width: $screen-laptop) {
+    width: calc(25% - 15px);
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    transition: 0.1s;
+    z-index: 5;
+  }
+
+  &_loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_green {
+    background: #70cdb1;
+  }
+
+  &_red {
+    background: #e9756f;
+  }
+
+  &_blue {
+    background: #8abcf5;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  &__typeList {
+    display: flex;
+    flex-direction: column;
+
+    &_row {
+      flex-direction: row;
+    }
+  }
+
+  &__typeListItem {
+    display: inline-block;
+    background: rgba(white, 0.3);
+    border-radius: 12px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+    &_mr10 {
+      margin-right: 10px;
+    }
+  }
+
+  &__pokemon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -5px;
+    bottom: -5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(white, 0.2);
+
+    &_center {
+      right: 0;
+      bottom: calc(50% - 50px);
+    }
+
+    & img {
+      max-width: 90px;
+      min-width: 60px;
+      height: auto;
+    }
+  }
+
+  &__id {
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.3;
+    color: black;
+    padding: 5px 0 10px 0;
+  }
+
+  &__favBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables.scss";
+
+.list {
+  display: block;
+
+  @media all and (min-width: $screen-smart) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 7.5px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    font-size: 24px;
+    margin: 15px;
+    color: #333;
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+}

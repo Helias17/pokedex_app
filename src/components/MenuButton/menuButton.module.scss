@@ -1,0 +1,38 @@
+@import "../../assets/styles/variables.scss";
+
+.button {
+  display: block;
+  text-align: center;
+  font-family: "FlexoRegular", sans-serif;
+  font-size: 12px;
+  color: #757575;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #7076c9;
+  }
+
+  @media all and (min-width: $screen-tablet) {
+    font-size: 16px;
+  }
+
+  &_active {
+    color: #7076c9;
+    cursor: default;
+
+    & img:nth-child(2) {
+      display: none;
+    }
+  }
+
+  &__iconBox {
+    position: relative;
+    height: 30px;
+
+    & img {
+      position: absolute;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage header Homepage header to match snapshop 1`] = `
+<DocumentFragment>
+  <header
+    class="pageHeader"
+  >
+    <div
+      class="menu"
+    />
+    <h1
+      class="pageHeader__title"
+    >
+      Pokedex
+    </h1>
+  </header>
+</DocumentFragment>
+`;

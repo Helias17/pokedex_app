@@ -1,0 +1,19 @@
+.menu {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  width: 60px;
+  height: 60px;
+  background: #f5f3f6 url("../../assets/images/burger_icon.svg") no-repeat
+    center center;
+  background-size: 25px 25px;
+  border-radius: 50%;
+  border: 10px solid white;
+  box-shadow: 0 0 1px 50px #f5f3f6;
+  transition: 0.1s;
+  cursor: pointer;
+
+  &:hover {
+    background-size: 30px 30px;
+  }
+}

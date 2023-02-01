@@ -1,0 +1,17 @@
+@import "../../assets/styles/variables.scss";
+
+.pageHeader {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: -45px;
+
+  &__title {
+    position: absolute;
+    left: $indent-smart;
+    top: 65px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #35353a;
+  }
+}

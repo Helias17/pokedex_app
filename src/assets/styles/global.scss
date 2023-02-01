@@ -1,0 +1,11 @@
+@import "./reset.scss";
+@import "../fonts/Flexo-Regular/flexoRegular.css";
+
+body,
+* {
+  font-family: "FlexoRegular", sans-serif;
+}
+
+.App {
+  padding-bottom: 80px;
+}
